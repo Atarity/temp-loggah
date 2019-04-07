@@ -2,7 +2,7 @@
 
 OUT_FILE="./$(date --date=@$(date +'%s') '+%Y%m%d-%H%M')-temp-log.csv"
 
-echo "ts;Time;temp1;temp2;Package id 0;Core 0;Core 1" > $OUT_FILE
+echo "ts;Time;temp1;temp2;Package id 0;Core 0;Core 1;" > $OUT_FILE
 
 while true
 do

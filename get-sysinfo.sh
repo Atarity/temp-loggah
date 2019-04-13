@@ -1,6 +1,6 @@
 #!/bin/bash
 
-OUT_FILE="./out.txt"
+OUT_FILE="./$(date --date=@$(date +'%s') '+%Y%m%d-%H%M')-sysinfo.txt"
 
 # 1. Kernel info
 echo "KERNEL VERSION ------------------" > $OUT_FILE
@@ -31,7 +31,16 @@ if ls /dev/nvme* 1> /dev/null 2>&1 && command -v nvme 1> /dev/null 2>&1 ; then
     sudo nvme smart-log /dev/nvme0n1 >> $OUT_FILE
     echo " " >> $OUT_FILE
 else
-    echo "NVME disks not found or nvme-cli didn't installed" >> $OUT_FILE
+    echo "- NVME disks not found or nvme-cli didn't installed" >> $OUT_FILE
+    echo "- NVME disks not found or nvme-cli didn't installed"
+    echo " " >> $OUT_FILE
+fi
+
+if command -v smartctl 1> /dev/null 2>&1 ; then
+    sudo smartctl -i /dev/sda >> $OUT_FILE
+else
+    echo "- Look like smartmontools didn't installed" >> $OUT_FILE
+    echo "- Look like smartmontools didn't installed"
     echo " " >> $OUT_FILE
 fi
 
@@ -49,3 +58,5 @@ echo " " >>$OUT_FILE
 echo "PCI-E DEVICES -------------------" >> $OUT_FILE
 sudo lspci -v >> $OUT_FILE
 echo " " >> $OUT_FILE
+
+echo "CREATED: ${OUT_FILE}"

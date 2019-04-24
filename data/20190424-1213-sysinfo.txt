@@ -1,5 +1,5 @@
 KERNEL VERSION ------------------
-Linux version 4.18.0-17-generic (buildd@lgw01-amd64-021) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #18~18.04.1-Ubuntu SMP Fri Mar 15 15:27:12 UTC 2019
+Linux version 4.18.0-18-generic (buildd@lcy01-amd64-006) (gcc version 7.3.0 (Ubuntu 7.3.0-16ubuntu3)) #19~18.04.1-Ubuntu SMP Fri Apr 5 10:22:13 UTC 2019
  
 CPU INFO ------------------------
 processor	: 0
@@ -9,7 +9,7 @@ model		: 142
 model name	: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz
 stepping	: 9
 microcode	: 0x8e
-cpu MHz		: 2744.345
+cpu MHz		: 2978.856
 cache size	: 4096 KB
 physical id	: 0
 siblings	: 4
@@ -36,7 +36,7 @@ model		: 142
 model name	: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz
 stepping	: 9
 microcode	: 0x8e
-cpu MHz		: 2640.536
+cpu MHz		: 2747.575
 cache size	: 4096 KB
 physical id	: 0
 siblings	: 4
@@ -63,7 +63,7 @@ model		: 142
 model name	: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz
 stepping	: 9
 microcode	: 0x8e
-cpu MHz		: 2732.355
+cpu MHz		: 2437.831
 cache size	: 4096 KB
 physical id	: 0
 siblings	: 4
@@ -90,7 +90,7 @@ model		: 142
 model name	: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz
 stepping	: 9
 microcode	: 0x8e
-cpu MHz		: 2630.798
+cpu MHz		: 2437.266
 cache size	: 4096 KB
 physical id	: 0
 siblings	: 4
@@ -112,37 +112,37 @@ power management:
 
  
 RAM INFO ------------------------
-MemTotal:       16342232 kB
-MemFree:        13241956 kB
-MemAvailable:   14354480 kB
-Buffers:          127496 kB
-Cached:          1540372 kB
+MemTotal:       16342208 kB
+MemFree:        13024448 kB
+MemAvailable:   14406528 kB
+Buffers:          107704 kB
+Cached:          1798756 kB
 SwapCached:            0 kB
-Active:          1858124 kB
-Inactive:         937844 kB
-Active(anon):    1130080 kB
-Inactive(anon):   363248 kB
-Active(file):     728044 kB
-Inactive(file):   574596 kB
+Active:          1504192 kB
+Inactive:        1432256 kB
+Active(anon):    1031800 kB
+Inactive(anon):   342888 kB
+Active(file):     472392 kB
+Inactive(file):  1089368 kB
 Unevictable:          32 kB
 Mlocked:              32 kB
 SwapTotal:       2097148 kB
 SwapFree:        2097148 kB
-Dirty:                52 kB
+Dirty:                24 kB
 Writeback:             0 kB
-AnonPages:       1127936 kB
-Mapped:           427956 kB
-Shmem:            365232 kB
-Slab:             179172 kB
-SReclaimable:     132312 kB
-SUnreclaim:        46860 kB
-KernelStack:       10736 kB
-PageTables:        38268 kB
+AnonPages:       1030032 kB
+Mapped:           519628 kB
+Shmem:            344492 kB
+Slab:             247836 kB
+SReclaimable:     151892 kB
+SUnreclaim:        95944 kB
+KernelStack:       10896 kB
+PageTables:        37432 kB
 NFS_Unstable:          0 kB
 Bounce:                0 kB
 WritebackTmp:          0 kB
-CommitLimit:    10268264 kB
-Committed_AS:    4824780 kB
+CommitLimit:    10268252 kB
+Committed_AS:    4762304 kB
 VmallocTotal:   34359738367 kB
 VmallocUsed:           0 kB
 VmallocChunk:          0 kB
@@ -158,42 +158,43 @@ HugePages_Rsvd:        0
 HugePages_Surp:        0
 Hugepagesize:       2048 kB
 Hugetlb:               0 kB
-DirectMap4k:      176460 kB
-DirectMap2M:     6031360 kB
+DirectMap4k:      211276 kB
+DirectMap2M:     5996544 kB
 DirectMap1G:    10485760 kB
  
 DISKS INFO ----------------------
 Filesystem      Size  Used Avail Use% Mounted on
 udev            8,4G     0  8,4G   0% /dev
 tmpfs           1,7G  1,8M  1,7G   1% /run
-/dev/sda1        59G   18G   39G  32% /
-tmpfs           8,4G  103M  8,3G   2% /dev/shm
+/dev/sda1        59G   20G   37G  35% /
+tmpfs           8,4G  101M  8,3G   2% /dev/shm
 tmpfs           5,3M  4,1k  5,3M   1% /run/lock
 tmpfs           8,4G     0  8,4G   0% /sys/fs/cgroup
-/dev/loop0      148M  148M     0 100% /snap/gnome-3-26-1604/74
-/dev/loop1       14M   14M     0 100% /snap/gnome-characters/139
-/dev/loop2      4,0M  4,0M     0 100% /snap/gnome-system-monitor/57
-/dev/loop3      151M  151M     0 100% /snap/gnome-3-28-1804/23
-/dev/loop5      4,4M  4,4M     0 100% /snap/gnome-calculator/352
-/dev/loop4      1,1M  1,1M     0 100% /snap/gnome-logs/57
-/dev/loop8       38M   38M     0 100% /snap/gtk-common-themes/1198
-/dev/loop6       96M   96M     0 100% /snap/core/6350
-/dev/loop11      57M   57M     0 100% /snap/core18/782
-/dev/loop7       16M   16M     0 100% /snap/gnome-logs/45
+/dev/loop1       94M   94M     0 100% /snap/core/6673
+/dev/loop0       16M   16M     0 100% /snap/gnome-logs/45
+/dev/loop3       14M   14M     0 100% /snap/gnome-characters/139
+/dev/loop2       96M   96M     0 100% /snap/core/6350
+/dev/loop4      4,0M  4,0M     0 100% /snap/gnome-system-monitor/57
+/dev/loop5      110M  110M     0 100% /snap/sigrok-suite/45
+/dev/loop7      151M  151M     0 100% /snap/gnome-3-28-1804/23
+/dev/loop6      1,1M  1,1M     0 100% /snap/gnome-logs/57
+/dev/loop8      656k  656k     0 100% /snap/indicator-sensors/111
 /dev/loop9      148M  148M     0 100% /snap/gnome-3-26-1604/82
-/dev/loop10      94M   94M     0 100% /snap/core/6673
+/dev/loop11     4,4M  4,4M     0 100% /snap/gnome-calculator/352
+/dev/loop10     148M  148M     0 100% /snap/gnome-3-26-1604/74
 /dev/loop12      37M   37M     0 100% /snap/gtk-common-themes/818
-/dev/loop13     656k  656k     0 100% /snap/indicator-sensors/111
+/dev/loop13      38M   38M     0 100% /snap/gtk-common-themes/1198
 /dev/loop14     4,0M  4,0M     0 100% /snap/gnome-system-monitor/70
-/dev/loop15      16M   16M     0 100% /snap/gnome-characters/206
-/dev/loop16     105M  105M     0 100% /snap/sensors-unity/75
-/dev/loop17     2,4M  2,4M     0 100% /snap/gnome-calculator/260
-tmpfs           1,7G   33k  1,7G   1% /run/user/1000
+/dev/loop15     105M  105M     0 100% /snap/sensors-unity/75
+/dev/loop17      16M   16M     0 100% /snap/gnome-characters/206
+/dev/loop16      57M   57M     0 100% /snap/core18/782
+/dev/loop18     2,4M  2,4M     0 100% /snap/gnome-calculator/260
+tmpfs           1,7G   21k  1,7G   1% /run/user/1000
  
 SSD INFO ------------------------
 - NVME disks not found or nvme-cli didn't installed
  
-smartctl 6.6 2016-05-31 r4324 [x86_64-linux-4.18.0-17-generic] (local build)
+smartctl 6.6 2016-05-31 r4324 [x86_64-linux-4.18.0-18-generic] (local build)
 Copyright (C) 2002-16, Bruce Allen, Christian Franke, www.smartmontools.org
 
 === START OF INFORMATION SECTION ===
@@ -208,7 +209,7 @@ Rotation Rate:    Solid State Device
 Device is:        In smartctl database [for details use: -P show]
 ATA Version is:   ATA8-ACS T13/1699-D revision 6
 SATA Version is:  SATA 2.6, 3.0 Gb/s
-Local Time is:    Sat Apr 13 16:03:08 2019 +04
+Local Time is:    Wed Apr 24 12:13:42 2019 +04
 SMART support is: Available - device has SMART capability.
 SMART support is: Enabled
 
@@ -222,13 +223,19 @@ NETWORK INFO --------------------
 2: enp1s0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
     link/ether 00:e0:67:0b:80:1a brd ff:ff:ff:ff:ff:ff
     inet 192.168.1.43/24 brd 192.168.1.255 scope global dynamic noprefixroute enp1s0
-       valid_lft 22923sec preferred_lft 22923sec
+       valid_lft 24016sec preferred_lft 24016sec
     inet6 fe80::6e6f:fc64:a330:9df0/64 scope link noprefixroute 
        valid_lft forever preferred_lft forever
 3: enp2s0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc fq_codel state DOWN group default qlen 1000
     link/ether 00:e0:67:0b:80:1b brd ff:ff:ff:ff:ff:ff
 4: wwp0s20f0u8c2: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
     link/ether 02:1e:10:1f:00:00 brd ff:ff:ff:ff:ff:ff
+5: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue state DOWN group default 
+    link/ether 02:42:57:0d:7e:37 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.0.1/16 brd 172.17.255.255 scope global docker0
+       valid_lft forever preferred_lft forever
+    inet6 fe80::42:57ff:fe0d:7e37/64 scope link 
+       valid_lft forever preferred_lft forever
  
 USB DEVICES ---------------------
 Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
@@ -279,7 +286,7 @@ PCI-E DEVICES -------------------
 
 00:17.0 SATA controller: Intel Corporation Sunrise Point-LP SATA Controller [AHCI mode] (rev 21) (prog-if 01 [AHCI 1.0])
 	Subsystem: Intel Corporation Sunrise Point-LP SATA Controller [AHCI mode]
-	Flags: bus master, 66MHz, medium devsel, latency 0, IRQ 125
+	Flags: bus master, 66MHz, medium devsel, latency 0, IRQ 127
 	Memory at df228000 (32-bit, non-prefetchable) [size=8K]
 	Memory at df22c000 (32-bit, non-prefetchable) [size=256]
 	I/O ports at f090 [size=8]
